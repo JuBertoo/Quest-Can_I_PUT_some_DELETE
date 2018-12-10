@@ -1,0 +1,12 @@
+
+extends layout
+
+block content
+  .main.container
+    form(method='POST' action="?_method=PUT")
+      div.form-group
+        label(for='name') Update Name:
+        input#name.form-control(type='text', placeholder='username' name='name')
+
+      button.btn.btn-primary(type='submit') UPDATE
+
